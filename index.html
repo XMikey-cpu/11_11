@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7eafa" />
+  <meta name="description" content="11:11 — A Universe Made for Zainab." />
+  <title>11:11 — A Universe Made for Zainab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to top">11:11 <span>✧</span></a>
+    <nav><a href="#reasons">Little things</a><a href="#gallery">Memories</a><a href="#surprise">A surprise</a></nav>
+    <button class="music-btn" id="musicToggle" aria-pressed="false"><span class="music-icon">♫</span><span id="musicLabel">Play our song</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="moon-glow"></div>
+      <p class="eyebrow reveal">A little wish, made just for you</p>
+      <div class="hero-number reveal">11:11</div>
+      <h1 class="hero-title reveal">A universe made<br>for <em>Zainab.</em></h1>
+      <p class="hero-copy reveal">Out of all the stars, all the skies, and all the wishes in this world…<br>I'm happiest that my universe led me to you.</p>
+      <a class="primary-btn reveal" href="#reasons">Step into our universe <span>✧</span></a>
+      <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
+      <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="section-kicker reveal">01 — THE UNIVERSE</div>
+      <div class="intro-content reveal">
+        <p class="small-script">For you, Zainab</p>
+        <h2>In a sky full of stars,<br><em>you are my favorite.</em></h2>
+        <p class="body-copy">Maybe 11:11 is just a time to everyone else. But to me, it's a little reminder to pause, make a wish, and be grateful that somewhere in this enormous universe, there is you.</p>
+      </div>
+      <div class="floating-star star-one">✦</div><div class="floating-star star-two">✧</div><div class="floating-star star-three">✦</div>
+    </section>
+
+    <section class="reasons section-pad" id="reasons">
+      <div class="section-kicker reveal">02 — THE LITTLE THINGS</div>
+      <div class="section-heading reveal"><p class="small-script">There are a thousand reasons</p><h2>And I could name <em>eleven</em> tonight.</h2><p>Tap each little star. I left something here for you.</p></div>
+      <div class="reason-grid" id="reasonGrid"></div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-kicker reveal">03 — OUR LITTLE GALLERY</div>
+      <div class="gallery-head reveal"><div><p class="small-script">Moments I'd keep forever</p><h2>Little memories,<br><em>endless meaning.</em></h2></div><p class="gallery-note">These spaces are waiting for your favorite photos. Add your pictures and turn this into your own little memory book.</p></div>
+      <div class="photo-grid" id="photoGrid"></div>
+      <p class="photo-hint">Replace the sample image paths in <code>content.js</code> with your photos.</p>
+    </section>
+
+    <section class="wish-section section-pad" id="surprise">
+      <div class="wish-card reveal">
+        <div class="wish-stars">✧　✦　✧</div>
+        <p class="small-script">A tiny surprise for you</p>
+        <h2>Hey, <em>Zainab.</em></h2>
+        <p class="wish-copy">If you could see yourself through my eyes for just a moment, I think you'd understand why I keep choosing you in every wish.</p>
+        <button class="primary-btn" id="surpriseBtn">Open your little surprise <span>♡</span></button>
+        <div class="surprise-message" id="surpriseMessage" aria-live="polite">
+          <span class="message-sparkle">✧</span>
+          <p>My favorite wish was never for something extraordinary.<br>It was simply for more ordinary days with you.</p>
+          <span class="signature">Always, with love ♡</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale section-pad">
+      <div class="finale-stars">✦ <span>✧</span> ✦</div>
+      <p class="small-script reveal">When the clock says 11:11</p>
+      <h2 class="reveal">I'd still wish<br><em>for you, Zainab.</em></h2>
+      <p class="final-line reveal">Today, tomorrow, and in every universe.</p>
+      <button class="wish-again reveal" id="wishBtn">Make one more wish <span>✧</span></button>
+      <p class="wish-confirm" id="wishConfirm" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><span>Made with love</span><span class="footer-heart">♡</span><span>for Zainab · 11:11</span></footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <!-- Our song: original uploaded M4A file, configured in content.js -->
+    <source id="musicSource" src="" type="audio/mp4">
+  </audio>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
